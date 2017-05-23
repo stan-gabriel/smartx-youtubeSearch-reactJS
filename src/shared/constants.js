@@ -1,4 +1,4 @@
-export const API_KEY = 'AIzaSyCJIga9IX4FRoyUEu9Uey3sY4R6aPavtq4';
+export const API_KEY = 'AIzaSyAlNcsypiOubKReR6XmMqkrv-nUNr5w2yw';
 export const MAIN_URL = 'https://www.googleapis.com/youtube/v3';
 export const TABS = {
   SEARCH_YOUTUBE: '/',
