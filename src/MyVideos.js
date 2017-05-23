@@ -12,17 +12,19 @@ MyVideos.propTypes = {
 
 export function MyVideos ({savedVideos, handleRemoveVideo}) {
   return (
-    <div>
+    <div className="search-videos">
+      <div className="video-items-list">
       {savedVideos.map(
         (item, index) => (
           <VideoItem
             video={item}
             key={item.id || index}
-            btnTitle='Remove'
+            btnTitle="Remove"
             handleVideo={handleRemoveVideo}
           />
         )
       )}
+      </div>
     </div>
   );
 }
