@@ -1,0 +1,75 @@
+.video-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px 15px;
+
+  .img-container {
+    flex: 1;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-self: stretch;
+    padding-left: 10px;
+
+    .title {
+      color: #167ac6;
+      font-size: 1.2em;
+      flex: 1;
+    }
+
+    .user,
+    .watches,
+    .upvotes {
+      color: #767676;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+    }
+
+    .user {
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .upvotes {
+      span {
+        margin-left: 5px;
+      }
+    }
+
+    button {
+      border-radius: 0;
+    }
+  }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+
+    .content {
+      padding-left: 0;
+
+      .title {
+        font-size: 0.9em;
+      }
+
+      .user {
+        font-size: 0.8em;
+      }
+
+      .watches,
+      .upvotes {
+        font-size: 0.6em;
+      }
+
+    }
+  }
+}

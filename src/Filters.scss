@@ -1,0 +1,33 @@
+.filters {
+  display: flex;
+  align-items: center;
+
+  .slider {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: .8em;
+      font-weight: 600;
+      color: rgba(0, 0, 0, .4);
+      margin: 0 5px;
+    }
+
+    .slider-container {
+      position: relative;
+
+      span {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    padding-left: 20px;
+  }
+}
